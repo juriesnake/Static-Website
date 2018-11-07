@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="main.css">
+<title>Santillan Learning Center</title>
+</head>
+
+<body>
+
+<div class="header">
+<img src="images/logo.png" style="height:160px;width:160px;margin-left:10%">
+<img src="images/header.gif" style="height:160px;width:540px;margin-left:10%">
+</div>
+
+<div class="navigation">
+	<ul>
+    	<li class="nav"><a class="nav" href="index.html">Home</a></li>
+        <li class="nav"><a class="nav" href="information.html">Information</a></li>
+        <li class="nav"><a class="nav" href="graduates.html">Graduates</a></li>
+        <li class="nav"><a class="nav" href="contactus.html">Contact Us</a></li>
+        <li class="nav"><a class="nav" href="about.html">About</a></li>
+    </ul>
+</div>
+
+<div class="body">
+	<b>Frequently Asked Question</b>
+    <p>1. What are the requirements in enrolling?<br/><ul>
+    	<li>Birth Certificate Xerox Copy</li>
+        <li>3 pcs. of 1x1 photo (blue background)</li>
+        <li>Report Card (for transferee)</li>
+    </ul></p>
+    <p>2. What to the fees composed of?<br/><ul>
+    	<li>Books</li>
+        <li>Miscellaneous Fee</li>
+        <li>Tuition Fee</li>
+    </ul></p>
+    <p>3. What are the freebies of the school?<br/><ul>
+    	<li>Every year have a freebies given like free field trip of free school supplies</li>
+    </ul></p>
+    <p>4. Can i refund my money?<br/><ul>
+    	<li>Your money can refund after 3 weeks from the start of the class</li>
+    </ul></p>
+    <p>5. What are subjects my child enrolled?<br/><ul>
+    	<li>Reading</li>
+        <li>Writing</li>
+        <li>Math</li>
+    </ul></p>
+</div>
+
+<div class="section">
+	<br/><br/>Frequntly Ask Question<br/>
+	<a href="faq.html"><img src="images/faq.png" style="height:120px;width:160px"></a><br/>
+	<br/><br/>Questions?<br/>
+	<a href="http://santillan.juriesnake.net78.net/inquire.pdf" target="_blank"><img src="images/inquiry.png"></a><br/>
+	<br/><br/>Are you student and wanna<br/>
+	<a href="mathplay.html"><img src="images/mathplay.png" style="height:60px;width:200px"></a><br/>
+	<br/><br/><p id="date"></p>
+	<script>
+		var now = new Date();
+		var month = ["January", "February", "March", "April", "May"];
+		var day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+		var time;
+		if(now.getHours()>12)
+			time = (now.getHours() - 12) + ":" + now.getMinutes() + " PM";
+		else
+			time = now.getHours() + ":" + now.getMinutes() + " AM";
+		
+		document.getElementById("date").innerHTML = day[now.getDay()] + "<br/>" + month[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear() + "<br/>" + time;
+	</script>
+</div>
+
+<div class="footer">Copyright &copy; 2014 CONJURIES Group<br/>All Rights Reserved</div>
+
+</body>
+</html>

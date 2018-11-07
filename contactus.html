@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="main.css">
+<title>Santillan Learning Center</title>
+</head>
+
+<body>
+
+<div class="header">
+<img src="images/logo.png" style="height:160px;width:160px;margin-left:10%">
+<img src="images/header.gif" style="height:160px;width:540px;margin-left:10%">
+</div>
+
+<div class="navigation">
+	<ul>
+    	<li class="nav"><a class="nav" href="index.html">Home</a></li>
+        <li class="nav"><a class="nav" href="information.html">Information</a></li>
+        <li class="nav"><a class="nav" href="graduates.html">Graduates</a></li>
+        <li class="nav"><a class="nav" href="contactus.html">Contact Us</a></li>
+        <li class="nav"><a class="nav" href="about.html">About</a></li>
+    </ul>
+</div>
+
+<div class="body">
+    <p style="text-align:center">
+    	For Inquiry,<br/>
+        Please contact:<br/>
+        Ms. Maribel C. Bennagen<br/>
+        09293179531<br/>
+        or<br/>
+        Ms. Rebecca Santillan<br/>
+        09108582131 <br/>
+        Or visit the school during office hours:<br/>
+        Mondays to Friday @ 8:00 – 11:00 am<br/>
+        3:00 – 5:00 pm<br/>
+    </p>
+</div>
+
+<div class="section">
+	<br/><br/>Frequntly Ask Question<br/>
+	<a href="faq.html"><img src="images/faq.png" style="height:120px;width:160px"></a><br/>
+	<br/><br/>Questions?<br/>
+	<a href="http://santillan.juriesnake.net78.net/inquire.pdf" target="_blank"><img src="images/inquiry.png"></a><br/>
+	<br/><br/>Are you student and wanna<br/>
+	<a href="mathplay.html"><img src="images/mathplay.png" style="height:60px;width:200px"></a><br/>
+	<br/><br/><p id="date"></p>
+	<script>
+		var now = new Date();
+		var month = ["January", "February", "March", "April", "May"];
+		var day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+		var time;
+		if(now.getHours()>12)
+			time = (now.getHours() - 12) + ":" + now.getMinutes() + " PM";
+		else
+			time = now.getHours() + ":" + now.getMinutes() + " AM";
+		
+		document.getElementById("date").innerHTML = day[now.getDay()] + "<br/>" + month[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear() + "<br/>" + time;
+	</script>
+</div>
+
+<div class="footer">Copyright &copy; 2014 CONJURIES Group<br/>All Rights Reserved</div>
+
+</body>
+</html>
